@@ -8,11 +8,27 @@ This app will handle all of the backend part for this [application](https://gith
 
 Please find the requirements for this project [here](https://github.com/microverseinc/curriculum-rails/blob/main/connect-frontend-frameworks/hello_world_two_apps.md).
 
-## Installation & Usage
+### Install
 
-- You need to have `git` and `ruby` installed on your local computer.
-- Clone the repository by running `git clone git@github.com:omar25ahmed/hello-rails-back-end.git`
-- Run the command `rails s` to see the result.
+Run the following command to install all the dependencies.
+
+```sh
+bundler install
+```
+
+### Usage
+
+Run the following command to start the server, then go to http://localhost:3000
+
+```sh
+rails db:create # create database
+rails db:migrate # migrate tables
+rails db:seed # load all data in database from seed.rb
+
+bin/dev # necessary to start the app for the first time
+---- or ----
+rails s # can be used after starting the app at least once
+```
 
 
 ## Technologies
